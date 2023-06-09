@@ -1,5 +1,13 @@
 import '../styles/tailwind.css';
+import Sidebar from '../components/Sidebar';
 
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <div>
+      <Sidebar />
+      <Component {...pageProps} />
+    </div>
+  );
 }
+
+export default MyApp;
